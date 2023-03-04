@@ -12,6 +12,8 @@ The project is structured as follows:
 
 Services are structured in a very simplified [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) manner. This is inspired by a great [introduction to DDD by Dax Raad](https://www.youtube.com/watch?v=MC_dS5G1jqw).
 
+![test](./assets/shapes.svg)
+
 ## Stacks
 
 Every example is a separate stack.
