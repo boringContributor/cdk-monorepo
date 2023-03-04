@@ -1,0 +1,24 @@
+{
+  "name": "cdk-examples",
+  "description": "This repo contains examples of how to use the AWS CDK.",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
+    "deploy": "turbo run deploy --filter=iac",
+    "destroy": "turbo run destroy --filter=iac"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.5",
+    "prettier": "2.8.3",
+    "turbo": "1.7.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.28.0"
+}
