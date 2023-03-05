@@ -1,6 +1,15 @@
 # CDK Examples
 
-This project demonstrates how to structure your CDK project with Turborepo.
+This project demonstrates how to use AWS CDK with Turborepo and DDD.
+
+## Goals
+I want to answer the following questions by giving examples and resources:
+- How to structure a CDK project
+- How to apply DDD to a serverless architecture
+- How to use Turborepo to manage a CDK project
+- How to leverage certain sevices with the CDK
+
+Each stack focuses on a specific AWS services and tries to show how to use it with the CDK.
 
 
 ## Project Structure
@@ -19,7 +28,8 @@ Services are structured in a very simplified [DDD](https://en.wikipedia.org/wiki
 Every example is a separate stack.
 The project contains the following stacks:
 
-- `PolicyStack` - contains infrastrcuture for the policy service. It is intended to be used to update or enforce AWS policies e.g. change the retention of log groups globally or enforce a specific tag on all resources.
+- `PolicyStack` - contains infrastrcuture for the policy service. It is intended to be used to update or enforce AWS policies e.g. change the retention of log groups globally or enforce a specific tag on all resources. This stack demonstrates the usage of the Event Bridge Scheduler and Lambda.
+    -  [Visuals for common patterns in Event Driven Architecture](https://serverlessland.com/event-driven-architecture/visuals)
 
 ## FYI
 
