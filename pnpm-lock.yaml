@@ -31,7 +31,8 @@ importers:
       ts-node: 10.9.1_alpjt73dvgv6kni625hu7f2l4m
       typescript: 4.9.5
 
-  services:
+  packages:
+
     specifiers:
       '@aws-lambda-powertools/logger': ^1.5.1
       '@aws-sdk/client-cloudwatch-logs': ^3.262.0
@@ -41,11 +42,13 @@ importers:
       remeda: ^1.6.1
       typescript: ^4.9.5
       vitest: ^0.28.3
+
     dependencies:
       '@aws-lambda-powertools/logger': 1.6.0
       '@aws-sdk/client-cloudwatch-logs': 3.282.0
       '@middy/core': 4.2.6
       remeda: 1.8.1
+
     devDependencies:
       '@types/aws-lambda': 8.10.111
       '@types/node': 18.14.6

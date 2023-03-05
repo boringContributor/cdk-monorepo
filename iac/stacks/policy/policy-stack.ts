@@ -17,7 +17,7 @@ export class PolicyStack extends Stack {
         functionName: `update-retention-${stage}`,
         entry: path.join(
           __dirname,
-          `../../../services/functions/update-retention.ts`
+          `../../../packages/functions/policy/update-retention.ts`
         ),
         logGroupProps: {
           removalPolicy: RemovalPolicy.DESTROY,

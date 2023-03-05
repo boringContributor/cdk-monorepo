@@ -1,6 +1,6 @@
 import { injectLambdaContext, Logger } from "@aws-lambda-powertools/logger";
 import middy from "@middy/core";
-import * as Retention from "../core/retention-service";
+import * as Retention from "../../core/policy/retention-service";
 
 const logger = new Logger({ serviceName: "update-retention" });
 

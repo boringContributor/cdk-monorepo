@@ -17,7 +17,7 @@ Each stack focuses on a specific AWS services and tries to show how to use it wi
 The project is structured as follows:
 
 - `iac/` - contains the CDK project and everything related to the backend infrastructure
-- `services/` - contains the services that are deployed to the backend infrastructure
+- `packages/` - contains the domains that are deployed to the backend infrastructure
 
 Services are structured in a very simplified [DDD](https://en.wikipedia.org/wiki/Domain-driven_design) manner. This is inspired by a great [introduction to DDD by Dax Raad](https://www.youtube.com/watch?v=MC_dS5G1jqw).
 
