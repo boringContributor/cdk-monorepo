@@ -8,6 +8,11 @@ const cloudWatchClient = new CloudWatchLogs({});
 const CHUNK_SIZE = 100;
 const RETENTION_IN_DAYS = 180; // 6 months
 
+export const create = async () => {
+    logger.debug("creating retention policy");
+    return undefined;
+}
+
 export const updateAll = async () => {
     const allLogGroups = await cloudWatchClient.describeLogGroups({});
     logger.info("retrieving log groups", { allLogGroupsLength: allLogGroups.logGroups?.length });

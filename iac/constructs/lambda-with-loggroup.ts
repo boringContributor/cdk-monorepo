@@ -32,7 +32,7 @@ export class LambdaWithLogGroup extends Construct {
         this.lambda = new NodejsFunction(this, `fn`, {
             memorySize: memorySize,
             timeout: duration,
-            handler: 'main',
+            handler: 'handler',
             entry: entry,
             environment: envVariables,
             bundling: bundling,

@@ -4,6 +4,7 @@ import { Policy, PolicyStatement } from "aws-cdk-lib/aws-iam";
 import { RetentionDays } from "aws-cdk-lib/aws-logs";
 import { Construct } from "constructs";
 import * as path from "path";
+import { OneTimeSchedule } from "./constructs/one-time-schedule";
 import { ScheduledLambda } from "./constructs/scheduled-lambda";
 
 export class PolicyStack extends Stack {
@@ -40,5 +41,7 @@ export class PolicyStack extends Stack {
     scheduledLambdaFn.lambda.role?.attachInlinePolicy(new Policy(this, `update-retention-policy-${stage}`, {
       statements: [cloudWatchPolicy]
     }));
+
+    new OneTimeSchedule(this, `one-time-schedule-${stage}`)
   }
 }
